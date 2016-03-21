@@ -22,13 +22,17 @@ namespace BullsAndCows
             }
             for (int i = 0; i < 3; i++)
             {
-                while (myNumber[0] == myNumber[1] || myNumber[0] == myNumber[2] || myNumber[0] == myNumber[3] || myNumber[1] == myNumber[2] || myNumber[1] == myNumber[3] || myNumber[2] == myNumber[3])
+                while (myNumber[0] == myNumber[1] || myNumber[0] == myNumber[2] || 
+                myNumber[0] == myNumber[3] || myNumber[1] == myNumber[2] ||
+                myNumber[1] == myNumber[3] || myNumber[2] == myNumber[3])
                 {
                     myNumber[i] = rnd.Next(0, 10);
                     i++;
                 }
             }
-            Console.WriteLine("Enter four-digit number whose digits are not repeated and are between 0 and 9. For example : 1234");
+            Console.Write("Enter four-digit number whose digits are not repeated"+
+            "and are between 0 and 9. For example : 1234");
+           
             
 
             while (true)
