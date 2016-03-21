@@ -53,7 +53,7 @@ namespace BullsAndCows
                         }
                     }
                 }
-                Console.WriteLine("You have {0} cows and {1} bulls",cows,bulls);
+                Console.WriteLine("You have {0} cows and {1} bulls",cows,bulls);// Epbati tupata krava
                 if (bulls==4)
                 {
                     break;
